@@ -3,13 +3,13 @@ This is a file that will outline the proces it took to create the database of En
 
 
 
-#Create a database
+# Create a database
 CREATE DATABASE entaph;
 
-#Connect to the database
+# Connect to the database
 \c entaph;
 
-#Creating the tables present in the DB 
+# Creating the tables present in the DB 
  Theses are commands used to create a new table in a database. since there are 4  
 
 (cutomers) 
@@ -55,7 +55,7 @@ CREATE TABLE pharmacylocation (
 );
 
 
-#Inserting data into the various tables
+# Inserting data into the various tables
 
 (cutomers) 
 INSERT INTO customers cus_fullname, cus_healthissue, cus_appointmentday) VALUES
@@ -80,9 +80,9 @@ INSERT INTO shareholders (sha_id, sha_gender, sha_marital_status, sha_age) VALUE
 #This is a command used to import data from a CSV file in to a particular
 table which in this case is shareholders.
 
---\copy shareholders (sha_id, sha_gender, sha_marital_status, sha_age)
+\copy shareholders (sha_id, sha_gender, sha_marital_status, sha_age)
 FROM '/path/to/your/shareholders.csv'
-WITH (FORMAT CSV, HEADER true, DELIMITER ',');--
+WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
 
 
@@ -94,9 +94,9 @@ INSERT INTO pharmacylocation (trading_name, owner_name, current_address, gphc_re
 #This is a command used to import data from a CSV file in to a particular
 table which in this case is pharmacylocation.
 
---\copy pharmacylocation (trading_name, owner_name, current_address, gphc_registration_number, status)
+\copy pharmacylocation (trading_name, owner_name, current_address, gphc_registration_number, status)
 FROM '/path/to/your/pharmacylocation.csv'
-WITH (FORMAT CSV, HEADER true, DELIMITER ',');--
+WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
 
 
@@ -148,7 +148,7 @@ print(f"Data saved to {file_path}")
 # This is a command used to import data from a CSV file in to a particular
 table which in this case is pharmaceutical_staff.
 
---\copy pharmaceutical_staff (first_name, last_name, age, position, location)
+\copy pharmaceutical_staff (first_name, last_name, age, position, location)
 FROM '/path/to/your/pharmaceuticalstaff.csv'
-WITH (FORMAT CSV, HEADER true, DELIMITER ',');--
+WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
