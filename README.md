@@ -1,13 +1,13 @@
 This is a file that will outline the proces it took to create the database of Entrance Pharmacy and populate it with data. Using POSTGRESQL
 
 
----Create a database
+#Create a database
 CREATE DATABASE entaph;
 
----Connect to the database
+#Connect to the database
 \c entaph;
 
----Creating the tables present in the DB 
+#Creating the tables present in the DB 
  Theses are commands used to create a new table in a database. since there are 4  
 
 (cutomers) 
@@ -54,7 +54,7 @@ CREATE TABLE pharmacylocation (
 
 
 
----Inserting data into the various tables
+#Inserting data into the various tables
 
 (cutomers) 
 INSERT INTO customers cus_fullname, cus_healthissue, cus_appointmentday) VALUES
