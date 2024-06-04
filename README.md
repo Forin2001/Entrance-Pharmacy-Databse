@@ -77,8 +77,8 @@ INSERT INTO shareholders (sha_id, sha_gender, sha_marital_status, sha_age) VALUE
 (458994, 'Male', 'Yes', 37),
 (458996, 'Female', 'Yes', 69);
 
-# This is a command used to import data from a CSV file in to a particular
-table which in this case is shareholders.
+# Command used to import data from a CSV file in to a particular table.
+Which in this case is shareholders.
 
 \copy shareholders (sha_id, sha_gender, sha_marital_status, sha_age)
 FROM '/path/to/your/shareholders.csv'
@@ -91,8 +91,8 @@ INSERT INTO pharmacylocation (trading_name, owner_name, current_address, gphc_re
 ('118 Pharmacy', '118 Pharmacy Ltd', '9 High Street, Walsall Wood, WALSALL, WS9 9LR, UK', 1112046, 'Registered'),
 ('3Q Pharmacy', 'KRG Healthcare Limited', '3 Queen Street, WELLINGBOROUGH, Northamptonshire, NN8 4RW, UK', 1105385, 'Registered');
 
-# This is a command used to import data from a CSV file in to a particular
-table which in this case is pharmacylocation.
+# Command used to import data from a CSV file in to a particular table.
+Which in this case is pharmacylocation.
 
 \copy pharmacylocation (trading_name, owner_name, current_address, gphc_registration_number, status)
 FROM '/path/to/your/pharmacylocation.csv'
@@ -145,8 +145,8 @@ df.to_csv(file_path, index=False)
 print(f"Data saved to {file_path}")
  
 
-# This is a command used to import data from a CSV file in to a particular
-table which in this case is pharmaceutical_staff.
+# Command used to import data from a CSV file in to a particular table.
+Which in this case is pharmaceutical_staff.
 
 \copy pharmaceutical_staff (first_name, last_name, age, position, location)
 FROM '/path/to/your/pharmaceuticalstaff.csv'
