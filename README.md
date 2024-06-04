@@ -106,7 +106,7 @@ INSERT INTO pharmaceutical_staff(first_name, last_name, age, position, location)
 ('Brianna', 'Williams', 46, 'Biostatistician', 'New Rebekahhaven'),
 ('Jennifer', 'Malone', 55, 'Medical Sales Representative', 'Leemouth');
 
-This particular data was generate with the python commands below,
+# This particular data was generated with the python commands below,
 
 import pandas as pd
 import random
